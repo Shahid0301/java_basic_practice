@@ -21,18 +21,7 @@ public class Trail_zero {
         Scanner s=new Scanner(System.in);
         int n=s.nextInt();
         int fac=obj.fac(n);
-//        String s1=String.valueOf(fac);
-//      int count=0;
-//        for (int i = s1.length(); i >=1; i--) {
-//            if(s1.charAt(i-1)=='0'){
-//                count=count+1;
-//            }
-//            else{
-//                break;
-//            }
-//        }
-        int count=0, rem;
-        int n1=String.valueOf(fac).length();
+        int count=0;
         for (int i = 5; n/i>=1; i*=5) {
             count+=n/i;
         }
@@ -40,6 +29,6 @@ public class Trail_zero {
         System.out.println(count);
         }
     }
-    //now algo change 
+    //now algo change
 
 
