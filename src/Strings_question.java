@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-//Take an array of Strings input from the user & find the cumulative (combined) length of all those strings.
+//Take an array of Strings input from the user & find the cumulative (combined) length of all those strings
 public class Strings_question {
     public static void main(String[] args) {
         Scanner s=new Scanner(System.in);
