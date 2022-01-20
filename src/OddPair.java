@@ -5,15 +5,16 @@ import java.util.Scanner;
 class Pair{
     public static ArrayList oddPair(int arr[]){
         ArrayList odd=new ArrayList();
-        for (int a:arr
-             ) {
-            for (int i = 0; i <arr.length; i++) {
-                int m=a*arr[i];
+        for (int j = 0; j <arr.length ; j++) {
+
+
+            for (int i = j; i <arr.length; i++) {
+                int m=arr[j]*arr[i];
                 if(m%2!=0){
-                    odd.add(a);
+                    odd.add(arr[j]);
+
                     odd.add(arr[i]);
                 }
-
             }
 
         }
