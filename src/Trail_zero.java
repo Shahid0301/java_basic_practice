@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-//finding the no of trailing zeroes in a factorial
+//finding the no of trailing zeroes in a factorial and also find the factorial
  class fun {
     public static int fac(int n){
         if(n==0) {
@@ -25,9 +25,10 @@ public class Trail_zero {
         for (int i = 5; n/i>=1; i*=5) {
             count+=n/i;
         }
-
+        System.out.println(fac);
         System.out.println(count);
         }
+
     }
     //now algo change
 
