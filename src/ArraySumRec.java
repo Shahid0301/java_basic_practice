@@ -8,13 +8,11 @@ public class ArraySumRec {
             return 0;
         }
         sum+=arr[i];
-        i=i;
         return sum+Sum(arr,i=i+1);
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int ans,i=0;
-        //int arr[]={1,2,3,6,6,3,4,5};
         System.out.println("enter the size of array");
         int n=sc.nextInt();
         int arr[]=new int[n];
