@@ -1,4 +1,4 @@
-//to print the counting till n by recursion
+//to print the counting till n by recursion,
 import java.util.Scanner;
 class Number{
     public static void number(int n){
