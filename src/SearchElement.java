@@ -1,4 +1,4 @@
-//to search and find the indices of the every occurrence of a target no. in an array and store them in an arraylist
+//to search and find the indices of the every occurrence of a target no. in an array and store them in an array
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Scanner;
