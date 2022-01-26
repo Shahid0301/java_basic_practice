@@ -1,7 +1,8 @@
-//To reverse the number and check that the no. is palindrome or not
+//To reverse the number and check that the no. is palindrome or not by recursion
 import java.util.Scanner;
 
 public class ReversePalin {
+    //method for reversing the no.
     static int rev(int n){
         if(n%10==n){
             return n;
@@ -10,6 +11,7 @@ public class ReversePalin {
         int rem=n%10;
         return rem*(int)(Math.pow(10,d-1))+rev(n/10);
     }
+    //main method
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
@@ -18,6 +20,7 @@ public class ReversePalin {
         palin(n);
 
     }
+    //method for finding the digit of a number
     static int digit(int n){
         int count=1;
         if(n==0){
@@ -25,6 +28,7 @@ public class ReversePalin {
         }
         return count+digit(n/10);
     }
+    //method for finding a palindrome or not
     static boolean palin(int n){
         if (n == rev(n)) {
             System.out.println("Its a palindrome");
