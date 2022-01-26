@@ -10,13 +10,10 @@ public class DigitSum {
         System.out.println(ans);
     }
     public static int sum(int n){
-        int sum1=0;
         if(n==0){
             return 0;
         }
-        sum1+=n%10;
-        n=n/10;
-        return sum1+sum(n);
+        return n%10+sum(n/10);
     }
 }
 
