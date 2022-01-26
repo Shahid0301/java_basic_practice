@@ -1,7 +1,7 @@
 //To reverse the number and check that the no. is palindrome or not
 import java.util.Scanner;
 
-public class ReverseRec {
+public class ReversePalin {
     static int rev(int n){
         if(n%10==n){
             return n;
