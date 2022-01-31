@@ -28,7 +28,7 @@ class Codechef
                     c = 0;
                     break;
                 }
-             
+
             }
             if(c!=0)
                 System.out.println("Yes");
