@@ -41,6 +41,30 @@ class LL{
         }
         System.out.println("null");
     }
+    void deleteFirst(){
+        if(head==null){
+            System.out.println("list is empty");
+            return;
+        }
+        head=head.next;
+    }
+    void deleteLast(){
+        if(head==null){
+            System.out.println("list is empty");
+            return;
+        }
+        Node secondLast=head;
+        Node Last=head.next;
+        if(Last==null){
+            head=null;
+            return;
+        }
+        while(Last.next!=null){
+            secondLast=secondLast.next;
+            Last=Last.next;
+        }
+        secondLast.next=null;
+    }
 
 }
 public class LinkedL {
@@ -50,6 +74,8 @@ public class LinkedL {
         list.addLast(3);
         list.addLast(4);
         list.addFirst(1);
+        list.deleteFirst();
+        list.deleteLast();
         list.display();
     }
 }
